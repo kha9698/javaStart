@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <MenuBar layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="excelLoad" mnemonicParsing="false" onAction="#getContacts" text="Load Contacts File" />
+                  <MenuItem fx:id="tempL" mnemonicParsing="false" onAction="#TempLoader" text="Load Saved Template" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#SaveTemp" text="Save Template" />
+                  <MenuItem fx:id="saveAs" mnemonicParsing="false" onAction="#SaveTempAs" text="Save Template As" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contact">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Open Contact Maneger" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="pdf" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#SavePdf" prefHeight="29.0" prefWidth="150.0" text="Save PDF" />
+      <Button fx:id="Email" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#OpenEmail" prefHeight="35.0" prefWidth="150.0" text="Send Email" />
+      <TextArea fx:id="TxtArea" layoutX="183.0" layoutY="55.0" prefHeight="733.0" prefWidth="802.0" />
+      <Label layoutX="14.0" layoutY="189.0" text="Tags:" />
+      <ChoiceBox fx:id="Tags" layoutX="14.0" layoutY="214.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

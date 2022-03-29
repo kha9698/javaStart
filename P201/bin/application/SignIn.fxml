@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="Send" layoutX="94.0" layoutY="151.0" mnemonicParsing="false" onAction="#SendMail" text="Sing and Send" />
+      <TextField fx:id="userMail" layoutX="65.0" layoutY="36.0" promptText="Email" />
+      <PasswordField fx:id="Pass" layoutX="65.0" layoutY="87.0" promptText="Password" />
+   </children>
+</AnchorPane>
